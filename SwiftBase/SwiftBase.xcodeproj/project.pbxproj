@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F59B2B8269E70130073FCEF /* PriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F59B2B7269E70130073FCEF /* PriorityQueue.swift */; };
+		0F59B2BA269E7E3D0073FCEF /* ComparableStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F59B2B9269E7E3D0073FCEF /* ComparableStack.swift */; };
+		0F59B2BC269EA9890073FCEF /* HashSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F59B2BB269EA9890073FCEF /* HashSet.swift */; };
 		0F605DAE269DA0EA00295530 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F605DAD269DA0EA00295530 /* main.swift */; };
 		0F605DB8269DA12700295530 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F605DB6269DA12700295530 /* LinkedList.swift */; };
 /* End PBXBuildFile section */
@@ -24,6 +27,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0F59B2B7269E70130073FCEF /* PriorityQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriorityQueue.swift; sourceTree = "<group>"; };
+		0F59B2B9269E7E3D0073FCEF /* ComparableStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComparableStack.swift; sourceTree = "<group>"; };
+		0F59B2BB269EA9890073FCEF /* HashSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashSet.swift; sourceTree = "<group>"; };
 		0F605DAA269DA0EA00295530 /* SwiftBase */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftBase; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F605DAD269DA0EA00295530 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		0F605DB6269DA12700295530 /* LinkedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
@@ -69,6 +75,9 @@
 			isa = PBXGroup;
 			children = (
 				0F605DB6269DA12700295530 /* LinkedList.swift */,
+				0F59B2B7269E70130073FCEF /* PriorityQueue.swift */,
+				0F59B2B9269E7E3D0073FCEF /* ComparableStack.swift */,
+				0F59B2BB269EA9890073FCEF /* HashSet.swift */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -131,7 +140,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F605DB8269DA12700295530 /* LinkedList.swift in Sources */,
+				0F59B2BC269EA9890073FCEF /* HashSet.swift in Sources */,
 				0F605DAE269DA0EA00295530 /* main.swift in Sources */,
+				0F59B2B8269E70130073FCEF /* PriorityQueue.swift in Sources */,
+				0F59B2BA269E7E3D0073FCEF /* ComparableStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

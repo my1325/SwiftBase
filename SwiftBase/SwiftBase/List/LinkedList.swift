@@ -33,7 +33,7 @@ public class LinkedList<T> {
             res.append(n[i])
             i = ne[i]
         }
-        return String(format: "[%@]\n", res.map({ "\($0)" }).joined(separator: "->"))
+        return String(format: "[%@]", res.map({ "\($0)" }).joined(separator: "->"))
     }
     
     private var size: Int = 0
