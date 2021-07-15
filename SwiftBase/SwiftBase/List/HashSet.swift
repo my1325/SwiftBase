@@ -11,7 +11,7 @@ public protocol HashValue: Equatable {
     var hashCode: Int { get }
 }
 
-/// 开发地址法(10^9的容量)
+/// 开发地址法(10^5的容量)
 public class HashSet<T: HashValue> {
     
     public var count: Int {
@@ -57,7 +57,7 @@ public class HashSet<T: HashValue> {
     }
 }
 
-/// 链地址法（10^9的容量）
+/// 链地址法（10^5的容量）
 public class HashLinkedSet<T: HashValue> {
     
     public var count: Int {
@@ -67,7 +67,7 @@ public class HashLinkedSet<T: HashValue> {
     private var size: Int = 0
     
     /// 容量的2倍
-    private let capacity: Int = 200003
+    private let capacity: Int = 100003
     
     private lazy var container: [Int] = Array(repeating: -1, count: capacity)
     
@@ -98,9 +98,7 @@ public class HashLinkedSet<T: HashValue> {
         let k = (val.hashCode % capacity + capacity) % capacity
         
         n[idx] = val
-        if container[k] != -1 {
-            ne[idx] = ne[container[k]]
-        }
+        ne[idx] = container[k]
         container[k] = idx
         idx += 1
         size += 1

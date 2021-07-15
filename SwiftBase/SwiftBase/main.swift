@@ -64,4 +64,15 @@ func testHashLinkedSet() {
     print(set.contains(1))
 }
 
-testHashLinkedSet()
+func testMath() {
+    let primes = Math.numberOfPrime2(10000000)
+    print(primes)
+    
+    var res: [Bool] = []
+    for x in primes {
+        res.append(Math.isPrime(x))
+    }
+    print(res)
+}
+
+testMath()

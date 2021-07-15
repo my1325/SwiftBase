@@ -37,9 +37,10 @@ public class PriorityQueue<T> {
     @discardableResult
     public func poll() -> T {
         guard size > 0 else { fatalError("empty queue") }
-        let res = heap.removeFirst()
         size -= 1
-
+        heap.swapAt(0, size)
+        let res = heap.removeLast()
+        down(0, size)
         return res
     }
     
@@ -63,22 +64,10 @@ public class PriorityQueue<T> {
     
     private func up(_ k: Int, _ n: Int) {
         guard k > 0 else { return }
-        
         let p = (k - 1) / 2
-        var u = p
-        if comparator(heap[u], heap[p * 2 + 1]) { u = p * 2 + 1 }
-        if p * 2 + 2 < n && comparator(heap[u], heap[p * 2 + 2]) { u = p * 2 + 2 }
-        
-        if u != p {
-            heap.swapAt(u, p)
+        if comparator(heap[p], heap[k]) {
+            heap.swapAt(k, p)
             up(p, n)
-        }
-    }
-    
-    /// 原地建堆
-    private func makeHeap() {
-        for i in stride(from: size / 2, through: 0, by: -1) {
-            down(i, size)
         }
     }
 }
@@ -93,6 +82,9 @@ extension PriorityQueue where T: Comparable {
         self.init()
         self.heap.append(contentsOf: origin)
         self.size = origin.count
-        self.makeHeap()
+        /// 原地建堆
+        for i in stride(from: size / 2, through: 0, by: -1) {
+            self.down(i, size)
+        }
     }
 }

@@ -12,6 +12,7 @@
 		0F59B2BC269EA9890073FCEF /* HashSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F59B2BB269EA9890073FCEF /* HashSet.swift */; };
 		0F605DAE269DA0EA00295530 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F605DAD269DA0EA00295530 /* main.swift */; };
 		0F605DB8269DA12700295530 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F605DB6269DA12700295530 /* LinkedList.swift */; };
+		0F96C6C226A01F67005E021A /* MathUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F96C6C126A01F67005E021A /* MathUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,6 +34,7 @@
 		0F605DAA269DA0EA00295530 /* SwiftBase */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftBase; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F605DAD269DA0EA00295530 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		0F605DB6269DA12700295530 /* LinkedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
+		0F96C6C126A01F67005E021A /* MathUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 		0F605DAC269DA0EA00295530 /* SwiftBase */ = {
 			isa = PBXGroup;
 			children = (
+				0F96C6C0269FFF32005E021A /* Math */,
 				0F605DB4269DA12700295530 /* List */,
 				0F605DAD269DA0EA00295530 /* main.swift */,
 			);
@@ -80,6 +83,14 @@
 				0F59B2BB269EA9890073FCEF /* HashSet.swift */,
 			);
 			path = List;
+			sourceTree = "<group>";
+		};
+		0F96C6C0269FFF32005E021A /* Math */ = {
+			isa = PBXGroup;
+			children = (
+				0F96C6C126A01F67005E021A /* MathUtils.swift */,
+			);
+			path = Math;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +153,7 @@
 				0F605DB8269DA12700295530 /* LinkedList.swift in Sources */,
 				0F59B2BC269EA9890073FCEF /* HashSet.swift in Sources */,
 				0F605DAE269DA0EA00295530 /* main.swift in Sources */,
+				0F96C6C226A01F67005E021A /* MathUtils.swift in Sources */,
 				0F59B2B8269E70130073FCEF /* PriorityQueue.swift in Sources */,
 				0F59B2BA269E7E3D0073FCEF /* ComparableStack.swift in Sources */,
 			);
