@@ -65,14 +65,14 @@ func testHashLinkedSet() {
 }
 
 func testMath() {
-    let primes = Math.numberOfPrime2(10000000)
+    let primes = Math.gcd(12312, 12324)
     print(primes)
     
-    var res: [Bool] = []
-    for x in primes {
-        res.append(Math.isPrime(x))
-    }
-    print(res)
+//    var res: [Bool] = []
+//    for x in primes {
+//        res.append(Math.isPrime(x))
+//    }
+//    print(res)
 }
 
 testMath()

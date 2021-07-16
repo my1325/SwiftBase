@@ -72,4 +72,81 @@ public class Math {
         }
         return res
     }
+    
+    /// 求一个数的所有约数(没有排序)
+    public static func divisors(_ x: Int) -> [Int] {
+        var res: [Int] = []
+        var i = 1
+        while i <= x / i {
+            if x % i == 0 {
+                res.append(i)
+                if i != x / i {
+                    res.append(x / i)
+                }
+            }
+            i += 1
+        }
+        return res
+    }
+    
+    /// 求一组数的乘积的约数个数(结果会取模10的9次方+7)，主要针对数特别大的时候做分解
+    public static func numberOfDevisors(_ x: [Int]) -> Int {
+        var p: [Int: Int] = [:]
+        
+        for n in x {
+            var _n = n
+            var i = 2
+            while i <= _n / i {
+                while _n % i == 0 {
+                    _n /= i
+                    p[i] = (p[i] ?? 0) + 1
+                }
+                i += 1
+            }
+            
+            if _n  > 1 { p[_n] = (p[_n] ?? 0) + 1 }
+        }
+        
+        var res = 1
+        for (_, v) in p {
+            res = res * (v + 1) % 1000000007
+        }
+        return res
+    }
+    
+    /// 求一组数的乘积的约数之和(结果会取模10的9次方+7)，主要针对数特别大的时候做分解
+    public static func sumOfDivisors(_ x: [Int]) -> Int {
+        var p: [Int: Int] = [:]
+        
+        for n in x {
+            var _n = n
+            
+            var i = 2
+            while i <= _n / i {
+                while _n % i == 0 {
+                    _n /= i
+                    p[i] = (p[i] ?? 0) + 1
+                }
+                i += 1
+            }
+            if _n > 1 { p[_n] = (p[_n] ?? 0) + 1 }
+        }
+        
+        var res = 1
+        for (k, a) in p {
+            var _a = a
+            var t = 1
+            while (_a > 0) {
+                t = (t * k + 1) % 1000000007
+                _a -= 1
+            }
+            res = res * t % 1000000007
+        }
+        return res
+    }
+    
+    /// 求两个数的最大公约数(欧几里得/辗转相除)
+    public static func gcd(_ a: Int, _ b: Int) -> Int {
+        return b > 0 ? gcd(b, a % b) : a
+    }
 }
