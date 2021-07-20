@@ -65,14 +65,8 @@ func testHashLinkedSet() {
 }
 
 func testMath() {
-    let primes = Math.gcd(12312, 12324)
-    print(primes)
-    
-//    var res: [Bool] = []
-//    for x in primes {
-//        res.append(Math.isPrime(x))
-//    }
-//    print(res)
+    let eulers = Math.eulers(of: 6)
+    print(eulers)
 }
 
 testMath()
