@@ -65,7 +65,7 @@ func testHashLinkedSet() {
 }
 
 func testMath() {
-    let eulers = Math.eulers(of: 6)
+    let eulers = Math.qmi(4, 31)
     print(eulers)
 }
 

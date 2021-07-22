@@ -209,4 +209,20 @@ public class Math {
         }
         return res
     }
+    
+    /// 快速幂
+    /// a: 底数
+    /// k: 指数
+    /// m: 需要模上的数，由于数比较大可能溢出，所以需要模上一个数(a: 3, k: 31 是 m: Int64.Max能计算的最大值)
+    static func qmi(_ a: Int64, _ k: Int64, _ m: Int64 = .max) -> Int64 {
+        var res: Int64 = 1
+        var n = k
+        var x = a
+        while n > 0 {
+            if (n & 1) == 1 { res = res * x % m }
+            n >>= 1
+            x = x * x % m
+        }
+        return res
+    }
 }
