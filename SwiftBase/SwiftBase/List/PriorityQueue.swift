@@ -73,7 +73,7 @@ public class PriorityQueue<T> {
 }
 
 extension PriorityQueue where T: Comparable {
-    
+    /// 最小堆
     public convenience init() {
         self.init(comparator: { $0 > $1 })
     }

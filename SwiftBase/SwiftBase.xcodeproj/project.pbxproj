@@ -14,6 +14,7 @@
 		0F605DB8269DA12700295530 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F605DB6269DA12700295530 /* LinkedList.swift */; };
 		0F70493626A9022000B8DB35 /* BigInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F70493526A9022000B8DB35 /* BigInt.swift */; };
 		0F96C6C226A01F67005E021A /* MathUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F96C6C126A01F67005E021A /* MathUtils.swift */; };
+		0FADB6B026DF8073008B89EC /* OrderedSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FADB6AF26DF8073008B89EC /* OrderedSet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +38,7 @@
 		0F605DB6269DA12700295530 /* LinkedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 		0F70493526A9022000B8DB35 /* BigInt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigInt.swift; sourceTree = "<group>"; };
 		0F96C6C126A01F67005E021A /* MathUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathUtils.swift; sourceTree = "<group>"; };
+		0FADB6AF26DF8073008B89EC /* OrderedSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderedSet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				0F59B2B7269E70130073FCEF /* PriorityQueue.swift */,
 				0F59B2B9269E7E3D0073FCEF /* ComparableStack.swift */,
 				0F59B2BB269EA9890073FCEF /* HashSet.swift */,
+				0FADB6AF26DF8073008B89EC /* OrderedSet.swift */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 				0F59B2BC269EA9890073FCEF /* HashSet.swift in Sources */,
 				0F70493626A9022000B8DB35 /* BigInt.swift in Sources */,
 				0F605DAE269DA0EA00295530 /* main.swift in Sources */,
+				0FADB6B026DF8073008B89EC /* OrderedSet.swift in Sources */,
 				0F96C6C226A01F67005E021A /* MathUtils.swift in Sources */,
 				0F59B2B8269E70130073FCEF /* PriorityQueue.swift in Sources */,
 				0F59B2BA269E7E3D0073FCEF /* ComparableStack.swift in Sources */,
