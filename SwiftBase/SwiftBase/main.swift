@@ -69,4 +69,8 @@ func testMath() {
     print(eulers)
 }
 
-testMath()
+//testMath()
+//let d: Double = 1
+//let mod: Double = 10
+
+//print(d.truncatingRemainder(dividingBy: mod))
