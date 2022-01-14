@@ -10,7 +10,7 @@ import Foundation
 public protocol HashValue: Equatable {
     var hashCode: Int { get }
 }
-
+ 
 /// 开发地址法(10^5的容量)
 public class HashSet<T: HashValue> {
     
